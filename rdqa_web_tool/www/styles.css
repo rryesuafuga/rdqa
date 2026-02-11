@@ -1,0 +1,326 @@
+/* ============================================================================
+   RDQA Web Tool — Custom Styles
+   Consistent with the demo website colour palette (ColorBrewer Set2)
+   ============================================================================ */
+
+/* --- Brand & Navigation --- */
+.brand-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 700;
+}
+
+.brand-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  background: #66C2A5;
+  color: #1A365D;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+}
+
+.navbar {
+  box-shadow: 0 2px 8px rgba(26, 54, 93, 0.15);
+}
+
+.navbar .nav-link {
+  font-weight: 500;
+  font-size: 0.9rem;
+  transition: opacity 0.2s;
+}
+
+.navbar .nav-link:hover {
+  opacity: 0.85;
+}
+
+/* --- Home / Welcome --- */
+.home-container {
+  padding: 20px 10px;
+}
+
+.welcome-panel {
+  background: white;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
+  border: 1px solid #e2e8f0;
+}
+
+.welcome-panel h2 {
+  color: #1A365D;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.welcome-panel .lead {
+  color: #4a5568;
+  font-size: 1.05rem;
+}
+
+.feature-item {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 18px;
+  padding: 12px;
+  border-radius: 8px;
+  transition: background 0.2s;
+}
+
+.feature-item:hover {
+  background: #f7fafc;
+}
+
+.feature-icon {
+  color: #66C2A5;
+  font-size: 1.3rem;
+  margin-top: 2px;
+  flex-shrink: 0;
+}
+
+.feature-item h6 {
+  color: #1A365D;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.feature-item p {
+  color: #718096;
+  font-size: 0.85rem;
+  margin-bottom: 0;
+  line-height: 1.4;
+}
+
+/* --- Connection panel --- */
+.connection-panel {
+  background: white;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
+  border: 1px solid #e2e8f0;
+}
+
+.connection-panel .module-header {
+  color: #1A365D;
+  font-weight: 700;
+  font-size: 1.15rem;
+}
+
+.pkg-status-row {
+  margin: 12px 0;
+}
+
+.pkg-status-row h5 {
+  font-size: 0.85rem;
+  color: #718096;
+  margin-bottom: 8px;
+}
+
+.pkg-status-row .badge {
+  font-size: 0.75rem;
+  padding: 5px 10px;
+  border-radius: 20px;
+}
+
+.live-conn-fields,
+.demo-config {
+  margin-top: 12px;
+  padding: 16px;
+  background: #f7fafc;
+  border-radius: 8px;
+  border: 1px solid #e2e8f0;
+}
+
+/* --- Value boxes / KPI cards --- */
+.kpi-row {
+  margin: 16px 0 24px 0;
+}
+
+.rdqa-value-box {
+  background: white;
+  border-radius: 10px;
+  padding: 16px 20px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+  border: 1px solid #e2e8f0;
+  transition: transform 0.15s, box-shadow 0.15s;
+}
+
+.rdqa-value-box:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.vb-title {
+  font-size: 0.78rem;
+  color: #718096;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-weight: 600;
+}
+
+.vb-value {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #1A365D;
+  line-height: 1.2;
+  margin: 4px 0;
+}
+
+.vb-subtitle {
+  font-size: 0.8rem;
+  color: #a0aec0;
+}
+
+/* --- Filter row --- */
+.filter-row {
+  background: white;
+  border-radius: 10px;
+  padding: 16px 20px 4px;
+  margin-bottom: 16px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+  border: 1px solid #e2e8f0;
+}
+
+/* --- Cards --- */
+.card {
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+  margin-bottom: 16px;
+  overflow: hidden;
+}
+
+.card-header {
+  background: #f7fafc !important;
+  border-bottom: 1px solid #e2e8f0;
+  font-weight: 600;
+  color: #1A365D;
+  font-size: 0.9rem;
+  padding: 12px 16px;
+}
+
+.card-body {
+  padding: 16px;
+}
+
+/* --- Module headers --- */
+.module-header {
+  color: #1A365D;
+  font-weight: 700;
+}
+
+/* --- Tables (DT) --- */
+.dataTables_wrapper {
+  font-size: 0.88rem;
+}
+
+table.dataTable thead th {
+  background: #1A365D !important;
+  color: white !important;
+  font-weight: 600;
+  font-size: 0.82rem;
+  border-bottom: none !important;
+}
+
+table.dataTable tbody td {
+  padding: 6px 10px;
+}
+
+table.dataTable.stripe tbody tr.odd {
+  background: #f7fafc;
+}
+
+/* --- Report preview --- */
+.report-preview-container {
+  background: #fdfdfd;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 24px;
+  max-height: 600px;
+  overflow-y: auto;
+}
+
+.report-preview-container h3 {
+  color: #1A365D;
+  border-bottom: 2px solid #66C2A5;
+  padding-bottom: 8px;
+}
+
+.report-preview-container h5 {
+  color: #2C5282;
+  margin-top: 16px;
+}
+
+/* --- Buttons --- */
+.btn-primary {
+  background: #1A365D;
+  border-color: #1A365D;
+}
+
+.btn-primary:hover {
+  background: #2C5282;
+  border-color: #2C5282;
+}
+
+.btn-success {
+  background: #2A9D8F;
+  border-color: #2A9D8F;
+}
+
+.btn-outline-secondary {
+  color: #718096;
+  border-color: #cbd5e0;
+}
+
+.btn-outline-primary {
+  color: #1A365D;
+  border-color: #1A365D;
+}
+
+/* --- Alert overrides --- */
+.alert-success {
+  background: #d4edda;
+  border-color: #c3e6cb;
+  color: #155724;
+}
+
+.alert-warning {
+  background: #fff3cd;
+  border-color: #ffeeba;
+  color: #856404;
+}
+
+.alert-info {
+  background: #d1ecf1;
+  border-color: #bee5eb;
+  color: #0c5460;
+}
+
+/* --- Responsive --- */
+@media (max-width: 768px) {
+  .home-container .row > [class*="col-"] {
+    margin-bottom: 16px;
+  }
+
+  .welcome-panel {
+    padding: 20px;
+  }
+
+  .vb-value {
+    font-size: 1.4rem;
+  }
+
+  .feature-item {
+    padding: 8px;
+  }
+}
+
+/* --- Plotly / ggplot consistent styling --- */
+.js-plotly-plot .plotly .main-svg {
+  border-radius: 6px;
+}
