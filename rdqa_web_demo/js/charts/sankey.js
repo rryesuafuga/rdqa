@@ -22,7 +22,7 @@ export function renderTriangulation(containerId) {
 
   const nodes = triangulationData.nodes;
   const sourceColors = {
-    tiko: '#66C2A5',
+    digital: '#66C2A5',
     hmis: '#FC8D62',
     dhis2: '#8DA0CB',
     verify: '#1a365d',

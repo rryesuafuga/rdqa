@@ -1,21 +1,22 @@
 # RDQA Demo Website Architecture
 
-## Tiko RDQA Consultancy — Demo-Sell-Build Website
+## Mubiri & Wayesu — RDQA Consultancy Website
 
-**Consultancy:** Routine Data Quality Audits (RDQAs) for Tiko Africa — Uganda Programme
+**Consultancy:** Independent Routine Data Quality Audit (RDQA) Services for Health Programmes in Uganda
 **Consultants:** Paul Mubiri & Raymond R. Wayesu
 **Date:** February 2026
-**Purpose:** Professional demo website to showcase the RDQA consultancy capabilities, methodology, and simulated deliverables to prospective clients — following the "demo-sell-build" approach.
+**Purpose:** Professional consultancy website to position Mubiri & Wayesu as established, independent RDQA consultants serving multiple health programmes, NGOs, and government partners in Uganda. Follows the "demo-sell-build" approach with anonymised, client-agnostic simulated data.
 
 ---
 
 ## 1. Strategic Intent (Demo-Sell-Build)
 
-This website is a **demo** — not the final product. It is designed to:
+This website positions the consultancy as a **going concern** — an established practice, not a one-off bid. It is designed to:
 
-1. **Earn Attention** — A bold unique value proposition that speaks directly to organisations like Tiko Africa needing independent, rigorous data quality assurance.
-2. **Earn Trust** — Interactive, media-quality simulated visualisations demonstrating what the RDQA deliverables look like in practice (Verification Factor dashboards, spider charts, facility scorecards, root cause breakdowns).
-3. **Drive Action** — Clear call-to-action for prospective clients to engage the consultancy team.
+1. **Earn Attention** — A bold unique value proposition targeting any health programme, NGO, or government partner needing independent data quality assurance in Uganda.
+2. **Earn Trust** — Interactive, media-quality simulated visualisations demonstrating what RDQA deliverables look like in practice (Verification Factor dashboards, spider charts, facility scorecards, root cause breakdowns). All data is anonymised ("Facility A1", "District A") to avoid appearing tailored to any single client.
+3. **Showcase Track Record** — Past performance section highlighting real engagements (PTBi, MGIC/PEPFAR, iTECH, Sanyu Africa, UVRI) with a "Your Programme Here" invitation to new clients.
+4. **Drive Action** — Clear call-to-action for prospective clients to engage the consultancy team, with a pre-filled email template.
 
 > *"If you can sell the demo, why even build the product?"* — Ash Maurya, Demo-Sell-Build Framework
 
@@ -64,18 +65,19 @@ The website is a **single-page application** with smooth-scrolling sections:
 
 ```
 index.html
-├── Section 1: Hero / UVP
-├── Section 2: The Challenge (Problem Statement)
-├── Section 3: Our Approach (Three-Way Triangulation)
-├── Section 4: Live Demo — Verification Factor Dashboard
-├── Section 5: Live Demo — Facility Scorecard Spider Charts
-├── Section 6: Live Demo — Root Cause Analysis
-├── Section 7: Live Demo — Monthly RDQA Timeline
-├── Section 8: Live Demo — Kampala vs Wakiso Comparison
-├── Section 9: Team Credentials
-├── Section 10: Frameworks & Methodology
-├── Section 11: Deliverables Overview
-├── Section 12: Call to Action / Contact
+├── Section 1:  Hero / UVP (general consultancy positioning)
+├── Section 2:  Services (RDQA, Digital Cross-Checks, Data Review Sessions)
+├── Section 3:  The Challenge (Digital vs Paper problem — generic)
+├── Section 4:  Our Approach (Three Frameworks)
+├── Section 5:  Live Demo — Verification Factor Dashboard (anonymised facilities)
+├── Section 6:  Live Demo — Facility Scorecard Spider Charts
+├── Section 7:  Live Demo — Root Cause Analysis
+├── Section 8:  Live Demo — Monthly RDQA Timeline
+├── Section 9:  Live Demo — Urban vs Peri-Urban Comparison (generic districts)
+├── Section 10: Clients / Past Performance (PTBi, MGIC, iTECH, Sanyu, UVRI + "Your Programme Here")
+├── Section 11: Team Credentials
+├── Section 12: Standard Deliverables
+├── Section 13: Call to Action / Contact
 └── Footer
 ```
 
@@ -194,7 +196,7 @@ rdqa_web_demo/
 
 All visualisations use **realistic but simulated data** designed to demonstrate the RDQA methodology. The data mirrors what actual RDQA outputs would look like:
 
-- **12 health facilities** across Kampala (6) and Wakiso (6) districts
+- **12 anonymised health facilities** across District A/Urban (6) and District B/Peri-Urban (6)
 - **5 health indicators:** Family Planning, HIV Testing Services, ANC First Visit, Immunisation (DPT3), SGBV Referrals
 - **Verification Factors** ranging from 72% to 118% to show realistic variation
 - **Systems Assessment Scores** across 5 M&E functional areas (1-5 Likert scale)
@@ -228,14 +230,15 @@ All visualisations use **realistic but simulated data** designed to demonstrate 
 
 | Demo-Sell-Build Element | Website Implementation |
 |------------------------|----------------------|
-| **Unique Value Proposition** | Hero section headline: "Data You Can Trust. Decisions You Can Defend." |
-| **Demo (Earn Trust)** | 5 interactive D3.js visualisation sections showing simulated RDQA outputs |
-| **Call to Action** | Contact section with direct email and "Request a Proposal" button |
-| **Urgency/Scarcity** | "March 2026 Start Date" — limited consultancy capacity for Q1 |
-| **Social Proof** | Team credentials, 25+ publications, past performance with PTBi, MGIC, UVRI |
-| **Three Core Features** | Three-Way Triangulation, Facility Scorecards, Root Cause Framework |
+| **Unique Value Proposition** | Hero section: "Data You Can Trust. Decisions You Can Defend." — positioned as general RDQA consultancy |
+| **Services** | Three service cards: RDQAs, Digital Cross-Checks, Facility Data Review Sessions |
+| **Demo (Earn Trust)** | 5 interactive D3.js visualisation sections with anonymised data (Facility A1-A6, B1-B6) |
+| **Social Proof / Track Record** | "Programmes We Have Supported" section — PTBi, MGIC/PEPFAR, iTECH, Sanyu Africa, UVRI |
+| **Open for Business** | "Your Programme Here" card inviting new clients + "Now Accepting Clients" badge |
+| **Call to Action** | Contact section with pre-filled email template and "Request a Proposal" button |
+| **Availability Signal** | "Now accepting Q2 2026 engagements across Uganda" badge in hero |
 
 ---
 
-*Architecture Document — Tiko RDQA Demo Website*
+*Architecture Document — Mubiri & Wayesu RDQA Consultancy Website*
 *Paul Mubiri & Raymond R. Wayesu | February 2026*

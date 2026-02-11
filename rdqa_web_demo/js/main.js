@@ -122,8 +122,8 @@ function renderRootCauseDetails() {
 
 // ---- District Stats ---- //
 function renderDistrictStats() {
-  const kampala = getDistrictStats('Kampala');
-  const wakiso = getDistrictStats('Wakiso');
+  const kampala = getDistrictStats('District A (Urban)');
+  const wakiso = getDistrictStats('District B (Peri-Urban)');
 
   const kampalaEl = document.getElementById('kampala-stats');
   const wakisoEl = document.getElementById('wakiso-stats');
@@ -143,7 +143,7 @@ function renderDistrictStats() {
 // ---- Chart Render Registry ---- //
 window.__chartRenderers = {
   'vf-chart': () => renderVerificationFactorChart('vf-chart', 'fp'),
-  'spider-chart': () => renderSpiderChart('spider-chart', 'KLA-001'),
+  'spider-chart': () => renderSpiderChart('spider-chart', 'UA-001'),
   'root-cause-chart': () => {
     renderRootCauseChart('root-cause-chart');
     renderRootCauseDetails();

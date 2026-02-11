@@ -25,7 +25,7 @@ export function renderDistrictCompare(containerId, indicatorId = 'fp') {
   // Defs for patterns
   const defs = svg.append('defs');
   defs.append('pattern')
-    .attr('id', 'diag-kampala')
+    .attr('id', 'diag-district-a')
     .attr('patternUnits', 'userSpaceOnUse')
     .attr('width', 6).attr('height', 6)
     .append('path')
@@ -34,7 +34,7 @@ export function renderDistrictCompare(containerId, indicatorId = 'fp') {
     .attr('stroke-width', 1.5);
 
   defs.append('pattern')
-    .attr('id', 'diag-wakiso')
+    .attr('id', 'diag-district-b')
     .attr('patternUnits', 'userSpaceOnUse')
     .attr('width', 6).attr('height', 6)
     .append('circle')
@@ -42,7 +42,7 @@ export function renderDistrictCompare(containerId, indicatorId = 'fp') {
     .attr('fill', '#7570B3');
 
   // Prepare data: avg VF per indicator per district
-  const districts = ['Kampala', 'Wakiso'];
+  const districts = ['District A (Urban)', 'District B (Peri-Urban)'];
   const data = indicators.map(ind => {
     const result = { indicator: ind.short, fullName: ind.name };
     districts.forEach(dist => {
@@ -67,7 +67,8 @@ export function renderDistrictCompare(containerId, indicatorId = 'fp') {
     .domain([70, 120])
     .range([height, 0]);
 
-  const colors = { Kampala: '#1B9E77', Wakiso: '#7570B3' };
+  const colors = { 'District A (Urban)': '#1B9E77', 'District B (Peri-Urban)': '#7570B3' };
+  const shortLabels = { 'District A (Urban)': 'Urban', 'District B (Peri-Urban)': 'Peri-Urban' };
 
   // Tolerance band
   svg.append('rect')
@@ -116,7 +117,7 @@ export function renderDistrictCompare(containerId, indicatorId = 'fp') {
       .attr('width', x1.bandwidth())
       .attr('y', d => y(d[dist]))
       .attr('height', d => height - y(d[dist]))
-      .attr('fill', `url(#diag-${dist.toLowerCase()})`)
+      .attr('fill', `url(#diag-district-${di === 0 ? 'a' : 'b'})`)
       .attr('opacity', 0.25)
       .attr('rx', 3)
       .attr('pointer-events', 'none');
@@ -167,6 +168,6 @@ export function renderDistrictCompare(containerId, indicatorId = 'fp') {
       .attr('x', 20).attr('y', 11)
       .attr('font-size', '11px').attr('font-weight', '600')
       .attr('fill', '#4a5568')
-      .text(dist);
+      .text(shortLabels[dist] || dist);
   });
 }

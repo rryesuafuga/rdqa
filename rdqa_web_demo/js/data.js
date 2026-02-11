@@ -1,23 +1,23 @@
 // ============================================
 // RDQA Demo — Simulated Data
-// Realistic data mirroring actual RDQA outputs
+// Generic anonymised data for demonstration
 // ============================================
 
 export const facilities = [
-  // Kampala District Facilities
-  { id: 'KLA-001', name: 'Kisenyi HC IV', district: 'Kampala', type: 'HC IV' },
-  { id: 'KLA-002', name: 'Kiswa HC III', district: 'Kampala', type: 'HC III' },
-  { id: 'KLA-003', name: 'Kawaala HC III', district: 'Kampala', type: 'HC III' },
-  { id: 'KLA-004', name: 'Komamboga HC III', district: 'Kampala', type: 'HC III' },
-  { id: 'KLA-005', name: 'Kitebi HC III', district: 'Kampala', type: 'HC III' },
-  { id: 'KLA-006', name: 'Bukoto HC II', district: 'Kampala', type: 'HC II' },
-  // Wakiso District Facilities
-  { id: 'WAK-001', name: 'Entebbe Hospital', district: 'Wakiso', type: 'Hospital' },
-  { id: 'WAK-002', name: 'Wakiso HC IV', district: 'Wakiso', type: 'HC IV' },
-  { id: 'WAK-003', name: 'Kasangati HC IV', district: 'Wakiso', type: 'HC IV' },
-  { id: 'WAK-004', name: 'Namayumba HC III', district: 'Wakiso', type: 'HC III' },
-  { id: 'WAK-005', name: 'Buwambo HC III', district: 'Wakiso', type: 'HC III' },
-  { id: 'WAK-006', name: 'Nsangi HC III', district: 'Wakiso', type: 'HC III' },
+  // District A (Urban) Facilities
+  { id: 'UA-001', name: 'Facility A1', district: 'District A (Urban)', type: 'HC IV' },
+  { id: 'UA-002', name: 'Facility A2', district: 'District A (Urban)', type: 'HC III' },
+  { id: 'UA-003', name: 'Facility A3', district: 'District A (Urban)', type: 'HC III' },
+  { id: 'UA-004', name: 'Facility A4', district: 'District A (Urban)', type: 'HC III' },
+  { id: 'UA-005', name: 'Facility A5', district: 'District A (Urban)', type: 'HC III' },
+  { id: 'UA-006', name: 'Facility A6', district: 'District A (Urban)', type: 'HC II' },
+  // District B (Peri-Urban) Facilities
+  { id: 'PU-001', name: 'Facility B1', district: 'District B (Peri-Urban)', type: 'Hospital' },
+  { id: 'PU-002', name: 'Facility B2', district: 'District B (Peri-Urban)', type: 'HC IV' },
+  { id: 'PU-003', name: 'Facility B3', district: 'District B (Peri-Urban)', type: 'HC IV' },
+  { id: 'PU-004', name: 'Facility B4', district: 'District B (Peri-Urban)', type: 'HC III' },
+  { id: 'PU-005', name: 'Facility B5', district: 'District B (Peri-Urban)', type: 'HC III' },
+  { id: 'PU-006', name: 'Facility B6', district: 'District B (Peri-Urban)', type: 'HC III' },
 ];
 
 export const indicators = [
@@ -31,18 +31,18 @@ export const indicators = [
 // Verification Factor data by facility and indicator
 // VF = (Recounted / Reported) x 100%
 export const verificationFactors = {
-  'KLA-001': { fp: 98, hts: 102, anc: 95, imm: 106, sgbv: 88 },
-  'KLA-002': { fp: 104, hts: 85, anc: 110, imm: 97, sgbv: 92 },
-  'KLA-003': { fp: 112, hts: 96, anc: 101, imm: 94, sgbv: 105 },
-  'KLA-004': { fp: 93, hts: 108, anc: 87, imm: 103, sgbv: 99 },
-  'KLA-005': { fp: 100, hts: 115, anc: 96, imm: 91, sgbv: 78 },
-  'KLA-006': { fp: 107, hts: 92, anc: 118, imm: 99, sgbv: 95 },
-  'WAK-001': { fp: 95, hts: 99, anc: 103, imm: 96, sgbv: 101 },
-  'WAK-002': { fp: 88, hts: 106, anc: 92, imm: 108, sgbv: 97 },
-  'WAK-003': { fp: 102, hts: 94, anc: 97, imm: 113, sgbv: 85 },
-  'WAK-004': { fp: 111, hts: 89, anc: 105, imm: 72, sgbv: 104 },
-  'WAK-005': { fp: 96, hts: 103, anc: 99, imm: 101, sgbv: 108 },
-  'WAK-006': { fp: 105, hts: 97, anc: 91, imm: 95, sgbv: 116 },
+  'UA-001': { fp: 98, hts: 102, anc: 95, imm: 106, sgbv: 88 },
+  'UA-002': { fp: 104, hts: 85, anc: 110, imm: 97, sgbv: 92 },
+  'UA-003': { fp: 112, hts: 96, anc: 101, imm: 94, sgbv: 105 },
+  'UA-004': { fp: 93, hts: 108, anc: 87, imm: 103, sgbv: 99 },
+  'UA-005': { fp: 100, hts: 115, anc: 96, imm: 91, sgbv: 78 },
+  'UA-006': { fp: 107, hts: 92, anc: 118, imm: 99, sgbv: 95 },
+  'PU-001': { fp: 95, hts: 99, anc: 103, imm: 96, sgbv: 101 },
+  'PU-002': { fp: 88, hts: 106, anc: 92, imm: 108, sgbv: 97 },
+  'PU-003': { fp: 102, hts: 94, anc: 97, imm: 113, sgbv: 85 },
+  'PU-004': { fp: 111, hts: 89, anc: 105, imm: 72, sgbv: 104 },
+  'PU-005': { fp: 96, hts: 103, anc: 99, imm: 101, sgbv: 108 },
+  'PU-006': { fp: 105, hts: 97, anc: 91, imm: 95, sgbv: 116 },
 };
 
 // Systems Assessment Scores (1-5 Likert scale across 5 functional areas)
@@ -54,18 +54,18 @@ export const systemsAssessment = {
     'Data Management',
     'Data Use'
   ],
-  'KLA-001': [4.2, 3.8, 4.5, 3.5, 3.0],
-  'KLA-002': [3.0, 2.5, 3.8, 2.8, 2.2],
-  'KLA-003': [3.5, 4.0, 3.2, 3.8, 3.5],
-  'KLA-004': [2.8, 3.2, 4.0, 2.5, 2.8],
-  'KLA-005': [4.0, 3.5, 4.2, 4.0, 3.8],
-  'KLA-006': [3.2, 2.8, 3.5, 3.0, 2.5],
-  'WAK-001': [4.5, 4.2, 4.8, 4.0, 3.5],
-  'WAK-002': [3.8, 3.0, 4.0, 3.2, 2.8],
-  'WAK-003': [3.5, 3.8, 3.5, 3.5, 3.2],
-  'WAK-004': [2.5, 2.2, 3.0, 2.0, 1.8],
-  'WAK-005': [4.0, 3.5, 4.5, 3.8, 3.5],
-  'WAK-006': [3.0, 3.2, 3.8, 2.8, 2.5],
+  'UA-001': [4.2, 3.8, 4.5, 3.5, 3.0],
+  'UA-002': [3.0, 2.5, 3.8, 2.8, 2.2],
+  'UA-003': [3.5, 4.0, 3.2, 3.8, 3.5],
+  'UA-004': [2.8, 3.2, 4.0, 2.5, 2.8],
+  'UA-005': [4.0, 3.5, 4.2, 4.0, 3.8],
+  'UA-006': [3.2, 2.8, 3.5, 3.0, 2.5],
+  'PU-001': [4.5, 4.2, 4.8, 4.0, 3.5],
+  'PU-002': [3.8, 3.0, 4.0, 3.2, 2.8],
+  'PU-003': [3.5, 3.8, 3.5, 3.5, 3.2],
+  'PU-004': [2.5, 2.2, 3.0, 2.0, 1.8],
+  'PU-005': [4.0, 3.5, 4.5, 3.8, 3.5],
+  'PU-006': [3.0, 3.2, 3.8, 2.8, 2.5],
 };
 
 // Root cause distribution (percentage across all facilities)
@@ -87,8 +87,8 @@ export const rootCauses = [
     color: 'var(--cb-green)',
     colorHex: '#A6D854',
     examples: [
-      'Transcription errors between registers and HMIS 105',
-      'Misunderstanding of Tiko app data entry fields',
+      'Transcription errors between registers and summaries',
+      'Misunderstanding of digital platform data entry',
       'Unclear indicator definitions across systems'
     ]
   },
@@ -99,7 +99,7 @@ export const rootCauses = [
     colorHex: '#FFD92F',
     examples: [
       'Stock-outs of HMIS registers and tally sheets',
-      'Connectivity issues affecting Tiko app sync',
+      'Connectivity issues affecting digital platform sync',
       'Lack of dedicated data storage space'
     ]
   },
@@ -137,9 +137,9 @@ export const timelinePhases = [
     color: 'var(--cb-purple)',
     colorHex: '#8DA0CB',
     tasks: [
-      'Receive facility list & indicator priorities from Tiko',
-      'Desk review of Tiko Platform & DHIS2 data',
-      'Coordinate with KCCA/Wakiso for joint visits',
+      'Receive facility list & indicator priorities from client',
+      'Desk review of digital platform & DHIS2 data',
+      'Coordinate with district health teams for joint visits',
       'Pre-load KoboToolbox instruments',
       'Review previous month action points'
     ]
@@ -173,7 +173,7 @@ export const timelinePhases = [
       'Generate facility scorecards & spider charts',
       'Compile Individual Facility Reports',
       'Update Action Point Tracker',
-      'Submit to Tiko by the 25th'
+      'Submit final reports to client by the 25th'
     ]
   }
 ];
@@ -181,14 +181,14 @@ export const timelinePhases = [
 // Triangulation flow data (for Sankey diagram)
 export const triangulationData = {
   nodes: [
-    { id: 'tiko', name: 'Tiko Platform', desc: 'Real-time digital records via app/SMS/WhatsApp' },
+    { id: 'digital', name: 'Digital Platform', desc: 'Real-time digital records from client systems' },
     { id: 'hmis', name: 'Facility Registers', desc: 'Primary HMIS registers (031, 055B, 071, 074, 080/081)' },
     { id: 'dhis2', name: 'National DHIS2', desc: 'District-level aggregate data from HMIS 105 reports' },
     { id: 'verify', name: 'Cross-Verification', desc: 'Three-way data comparison & VF computation' },
     { id: 'output', name: 'Verified Data', desc: 'Accurate, complete, and actionable programme data' }
   ],
   links: [
-    { source: 'tiko', target: 'verify', value: 35 },
+    { source: 'digital', target: 'verify', value: 35 },
     { source: 'hmis', target: 'verify', value: 40 },
     { source: 'dhis2', target: 'verify', value: 25 },
     { source: 'verify', target: 'output', value: 100 }
