@@ -1,0 +1,16 @@
+{
+  "name": "rdqa-web-demo",
+  "version": "1.0.0",
+  "description": "RDQA Demo Website — Routine Data Quality Audits for Tiko Africa, Uganda Programme 2026",
+  "private": true,
+  "scripts": {
+    "dev": "npx serve .",
+    "start": "npx serve ."
+  },
+  "keywords": ["rdqa", "data-quality", "tiko", "uganda", "health", "d3js"],
+  "authors": [
+    "Paul Mubiri <mubirip@gmail.com>",
+    "Raymond R. Wayesu <raymondrwayesu@gmail.com>"
+  ],
+  "license": "UNLICENSED"
+}

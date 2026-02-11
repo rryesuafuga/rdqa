@@ -1,0 +1,130 @@
+/* ============================================
+   RDQA Demo — CSS Custom Properties
+   Colorblind-Safe Palette (ColorBrewer Set2/Dark2)
+   ============================================ */
+
+:root {
+  /* ---- Colorblind-Safe Data Palette ---- */
+  --cb-teal: #66C2A5;
+  --cb-orange: #FC8D62;
+  --cb-purple: #8DA0CB;
+  --cb-pink: #E78AC3;
+  --cb-green: #A6D854;
+  --cb-yellow: #FFD92F;
+  --cb-brown: #E5C494;
+  --cb-grey: #B3B3B3;
+
+  /* Dark2 variants for text/emphasis */
+  --cb-teal-dark: #1B9E77;
+  --cb-orange-dark: #D95F02;
+  --cb-purple-dark: #7570B3;
+  --cb-pink-dark: #E7298A;
+  --cb-green-dark: #66A61E;
+  --cb-yellow-dark: #E6AB02;
+  --cb-brown-dark: #A6761D;
+  --cb-grey-dark: #666666;
+
+  /* ---- Brand Colours ---- */
+  --primary: #1a365d;
+  --primary-light: #2a4a7f;
+  --primary-lighter: #3d5fa0;
+  --accent: #66C2A5;
+  --accent-hover: #4daf91;
+  --danger: #FC8D62;
+  --warning: #FFD92F;
+  --info: #8DA0CB;
+
+  /* ---- Neutrals ---- */
+  --bg-primary: #ffffff;
+  --bg-secondary: #f7f8fc;
+  --bg-tertiary: #eef1f8;
+  --bg-dark: #0f172a;
+  --bg-dark-secondary: #1e293b;
+  --text-primary: #1a202c;
+  --text-secondary: #4a5568;
+  --text-tertiary: #718096;
+  --text-inverse: #f7fafc;
+  --border: #e2e8f0;
+  --border-light: #edf2f7;
+
+  /* ---- Typography ---- */
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-serif: 'Source Serif 4', 'Georgia', serif;
+  --font-mono: 'JetBrains Mono', 'Fira Code', monospace;
+
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.25rem;
+  --text-2xl: 1.5rem;
+  --text-3xl: 1.875rem;
+  --text-4xl: 2.25rem;
+  --text-5xl: 3rem;
+  --text-6xl: 3.75rem;
+
+  --leading-tight: 1.25;
+  --leading-normal: 1.6;
+  --leading-relaxed: 1.75;
+
+  /* ---- Spacing ---- */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.25rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+  --space-10: 2.5rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
+  --space-20: 5rem;
+  --space-24: 6rem;
+  --space-32: 8rem;
+
+  /* ---- Layout ---- */
+  --max-width: 1200px;
+  --max-width-narrow: 800px;
+  --section-padding: var(--space-24) var(--space-6);
+
+  /* ---- Shadows ---- */
+  --shadow-sm: 0 1px 2px rgba(0,0,0,0.05);
+  --shadow-md: 0 4px 6px -1px rgba(0,0,0,0.1), 0 2px 4px -1px rgba(0,0,0,0.06);
+  --shadow-lg: 0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -2px rgba(0,0,0,0.05);
+  --shadow-xl: 0 20px 25px -5px rgba(0,0,0,0.1), 0 10px 10px -5px rgba(0,0,0,0.04);
+  --shadow-card: 0 4px 24px rgba(26,54,93,0.08);
+
+  /* ---- Borders ---- */
+  --radius-sm: 0.375rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 0.75rem;
+  --radius-xl: 1rem;
+  --radius-2xl: 1.5rem;
+  --radius-full: 9999px;
+
+  /* ---- Transitions ---- */
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --duration-fast: 150ms;
+  --duration-normal: 300ms;
+  --duration-slow: 500ms;
+
+  /* ---- Chart Dimensions ---- */
+  --chart-height: 400px;
+  --chart-height-sm: 300px;
+}
+
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-primary: #0f172a;
+    --bg-secondary: #1e293b;
+    --bg-tertiary: #334155;
+    --text-primary: #f1f5f9;
+    --text-secondary: #cbd5e1;
+    --text-tertiary: #94a3b8;
+    --border: #334155;
+    --border-light: #1e293b;
+    --shadow-card: 0 4px 24px rgba(0,0,0,0.3);
+  }
+}

@@ -1,0 +1,142 @@
+/* ============================================
+   RDQA Demo — Responsive Breakpoints
+   ============================================ */
+
+/* ---- Mobile First: Small screens (< 640px) ---- */
+@media (max-width: 639px) {
+  :root {
+    --section-padding: var(--space-16) var(--space-4);
+  }
+
+  .hero-title {
+    font-size: var(--text-3xl);
+  }
+
+  .hero-subtitle {
+    font-size: var(--text-base);
+  }
+
+  .stats-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-4);
+  }
+
+  .section-title {
+    font-size: var(--text-2xl);
+  }
+
+  .chart-wrapper {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .chart-wrapper svg {
+    min-width: 500px;
+  }
+
+  .framework-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .team-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .deliverable-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .triangulation-visual {
+    flex-direction: column;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .mobile-menu-btn {
+    display: flex;
+  }
+
+  .district-controls {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+
+/* ---- Tablet (640px - 1023px) ---- */
+@media (min-width: 640px) and (max-width: 1023px) {
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .framework-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .team-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .deliverable-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .hero-title {
+    font-size: var(--text-4xl);
+  }
+}
+
+/* ---- Desktop (1024px+) ---- */
+@media (min-width: 1024px) {
+  .stats-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .framework-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .team-grid {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  .deliverable-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .hero-title {
+    font-size: var(--text-5xl);
+  }
+}
+
+/* ---- Large Desktop (1280px+) ---- */
+@media (min-width: 1280px) {
+  .container {
+    max-width: var(--max-width);
+  }
+}
+
+/* Print styles */
+@media print {
+  .nav,
+  .hero-particles,
+  .mobile-menu-btn,
+  .cta-section {
+    display: none;
+  }
+
+  .reveal,
+  .reveal-left,
+  .reveal-right,
+  .reveal-scale {
+    opacity: 1;
+    transform: none;
+  }
+
+  section {
+    page-break-inside: avoid;
+  }
+}
