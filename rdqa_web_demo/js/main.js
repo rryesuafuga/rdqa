@@ -50,18 +50,20 @@ function initNav() {
   // Mobile menu
   const menuBtn = document.querySelector('.mobile-menu-btn');
   const navLinksContainer = document.querySelector('.nav-links');
-  if (menuBtn) {
+  if (menuBtn && navLinksContainer) {
     menuBtn.addEventListener('click', () => {
-      navLinksContainer.style.display =
-        navLinksContainer.style.display === 'flex' ? 'none' : 'flex';
-      navLinksContainer.style.flexDirection = 'column';
-      navLinksContainer.style.position = 'absolute';
-      navLinksContainer.style.top = '64px';
-      navLinksContainer.style.left = '0';
-      navLinksContainer.style.right = '0';
-      navLinksContainer.style.background = '#fff';
-      navLinksContainer.style.padding = '1rem';
-      navLinksContainer.style.boxShadow = '0 4px 12px rgba(0,0,0,0.1)';
+      const isOpen = navLinksContainer.classList.toggle('mobile-open');
+      menuBtn.classList.toggle('menu-open', isOpen);
+      menuBtn.setAttribute('aria-expanded', isOpen);
+    });
+
+    // Close menu when a link is tapped
+    navLinksContainer.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        navLinksContainer.classList.remove('mobile-open');
+        menuBtn.classList.remove('menu-open');
+        menuBtn.setAttribute('aria-expanded', 'false');
+      });
     });
   }
 }
